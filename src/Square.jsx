@@ -10,7 +10,7 @@ export default function Square({ value, onClick, className, player }) {
         <button
             type="button"
             onClick={onClick}
-            className={`w-28 h-28 text-5xl ${className} ${hoverClass}`}>
+            className={`w-36 h-36 text-5xl ${className} ${hoverClass}`}>
             {value}
         </button>
     )
