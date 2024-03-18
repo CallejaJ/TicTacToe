@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+    "author": "Jorge Calleja @codinginsideout <callejaj@proton.me> (https://www.linkedin.com/in/callejaj/)",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

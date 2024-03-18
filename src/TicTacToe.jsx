@@ -44,11 +44,10 @@ export default function TicTacToe() {
     // Track each player Turn with useState and value X and O. 
     // Create a click event to change the state of each square on player click
     const [player, setPlayer] = useState("X")
-
     const [strikeClass, setStrikeClass] = useState("hidden");
     const [winner, setWinner] = useState("");
 
-    function handleCellClick(index) {
+    function handleSquareClick(index) {
         // Return if square already contents a value
         if (square[index] !== null) return;
         // Create a new array to add each square index 
@@ -80,7 +79,7 @@ export default function TicTacToe() {
             {/* Pass down the handleSquareClick to Board component */}
             <Board
                 square={square}
-                onClick={handleCellClick}
+                onClick={handleSquareClick}
                 strikeClass={strikeClass}
                 player={player}
                 winner={winner}

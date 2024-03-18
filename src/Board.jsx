@@ -3,12 +3,11 @@
 import Square from "./Square"
 
 
-// This would all the squares and the UI structure of the game.
-// Pass down the squareClick function to square component
+/* This would all the squares and the UI structure of the game.
+ Pass down the squareClick function to square component*/
 export default function Board({ square, onClick, player, strikeClass, winner, reset }) {
-    // Create a grid of 9 squares with Tailwind CSS and pass down the square state 
-    // as custom values from index 0 - 8. 
-    // Remember JavaScript arrays are zero-indexed
+    /* Create a grid of 9 squares with Tailwind CSS and pass down the square state
+     as custom values from index 0 - 8. Remember JavaScript arrays are zero-indexed*/
     return (
         <div className="flex flex-col justify-center items-center h-screen">
             <div className="flex flex-col">
@@ -65,7 +64,8 @@ export default function Board({ square, onClick, player, strikeClass, winner, re
                             className="border-r-0 border-b-0"
                             player={player} />
                         <div
-                            className={`absolute w-full bg-orange-600 z-40 ${strikeClass}`}></div>
+                            className={`absolute w-full bg-orange-600 z-40 ${strikeClass}`}>
+                        </div>
                     </div>
                 </div>
             </div>
