@@ -1,4 +1,4 @@
-# TicTacToe
+# A TicTacToe game
 
 Tic Tac Toe game using React.js! 
 React.js is a powerful JavaScript library for building user interfaces, and it's an excellent choice for creating interactive and dynamic web applications. A simple Tic Tac Toe game.
@@ -8,10 +8,11 @@ React.js is a powerful JavaScript library for building user interfaces, and it's
 ```javascript
 npm install -D tailwindcss
 npx tailwindcss init
+````
 
-tailwind.config.js
-
-/** @type {import('tailwindcss').Config} */
+Add a tailwind.config.js file
+```javascript
+ @type {import('tailwindcss').Config}
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -19,9 +20,9 @@ module.exports = {
   },
   plugins: [],
 }
-
-input css
-
+```
+Add to input css
+```javascript
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
