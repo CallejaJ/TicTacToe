@@ -5,7 +5,7 @@ import Square from "./Square"
 
 // This would all the squares and the UI structure of the game.
 // Pass down the squareClick function to square component
-export default function Board({ square, onClick, player, winner, reset }) {
+export default function Board({ square, onClick, player, strikeClass, winner, reset }) {
     // Create a grid of 9 squares with Tailwind CSS and pass down the square state 
     // as custom values from index 0 - 8. 
     // Remember JavaScript arrays are zero-indexed
@@ -64,10 +64,12 @@ export default function Board({ square, onClick, player, winner, reset }) {
                             onClick={() => onClick(8)}
                             className="border-r-0 border-b-0"
                             player={player} />
+                        <div
+                            className={`absolute w-full bg-orange-600 z-40 ${strikeClass}`}></div>
                     </div>
                 </div>
-                {/* Create a Strike div in Board to update the board when we have a winning pattern.
-            The strikeClass would come from Tic-tac-toe component */}
+            </div>
+
 
                 {winner && (
                     <div className="flex justify-center mt-16">
@@ -83,9 +85,7 @@ export default function Board({ square, onClick, player, winner, reset }) {
                     <div className="w-300 h-300 border-2 p-4 text-4xl shadow-lg rounded-lg">
                         <button onClick={reset}>Reset</button>
                     </div>
-                </div>
             </div>
         </div>
-
     )
 }
