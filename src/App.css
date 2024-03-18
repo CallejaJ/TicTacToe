@@ -66,6 +66,13 @@ body {
   transform: skewY(-45deg);
 }
 
+.strike-diagonal-3 {
+  width: 90%;
+  height: 4px;
+  top: 50%;
+  left: 5%;
+  transform: skewY(-45deg);
+}
 .x-hover:hover::after {
   content: "X";
   opacity: 0.4;

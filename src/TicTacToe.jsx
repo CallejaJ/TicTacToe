@@ -15,15 +15,16 @@ function checkWinner(square, setStrikeClass, setWinner) {
         { combo: [0, 1, 2], strikeClass: "strike-row-1" }, // top row
         { combo: [3, 4, 5], strikeClass: "strike-row-2" }, // middle row
         { combo: [6, 7, 8], strikeClass: "strike-row-3" }, // bottom row
-        { combo: [0, 4, 8], strikeClass: "strike-row-4" }, // top left
-        { combo: [2, 4, 6], strikeClass: "strike-row-5" }, // top right
-        { combo: [0, 3, 6], strikeClass: "strike-row-6" }, // left column
-        { combo: [1, 4, 7], strikeClass: "strike-row-7" }, // middle column
-        { combo: [2, 5, 8], strikeClass: "strike-row-8" }, // right column
+        { combo: [0, 4, 8], strikeClass: "strike-diagonal-1" }, // top left
+        { combo: [2, 4, 6], strikeClass: "strike-diagonal-3" }, // top right
+        { combo: [0, 3, 6], strikeClass: "strike-column-1" }, // left column
+        { combo: [1, 4, 7], strikeClass: "strike-column-2" }, // middle column
+        { combo: [2, 5, 8], strikeClass: "strike-column-3" }, // right column
     ];
     for (const { combo, strikeClass } of winningCombos) {
         const [a, b, c] = combo;
         if (square[a] && square[a] === square[b] && square[a] === square[c]) {
+            console.log(strikeClass);
             setStrikeClass(strikeClass);
             if (square[a] === "X") {
                 setWinner("X");
