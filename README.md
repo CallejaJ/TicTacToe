@@ -1,6 +1,6 @@
 # A TicTacToe game
 
-https://github.com/CallejaJ/TicTacToe/assets/115414519/de8e6616-7743-47dc-a121-0ea43ba6ee59
+https://github.com/CallejaJ/TicTacToe/assets/115414519/f41715fb-61be-4db3-a49a-09892191ba57
 
 Tic Tac Toe game using React.js! 
 React.js is a powerful JavaScript library for building user interfaces, and it's an excellent choice for creating interactive and dynamic web applications. A simple Tic Tac Toe game.

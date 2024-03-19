@@ -64,7 +64,7 @@ export default function Board({ square, onClick, player, strikeClass, winner, re
                             className="border-r-0 border-b-0"
                             player={player} />
                         <div
-                            className={`absolute w-full bg-orange-600 z-40 ${strikeClass}`}>
+                            className={`absolute w-full bg-purple-600 z-40 ${strikeClass}`}>
                         </div>
                     </div>
                 </div>
